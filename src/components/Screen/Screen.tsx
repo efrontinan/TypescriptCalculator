@@ -8,6 +8,13 @@ const Screen = () => {
             sx={{
                 justifyContent: "center",
                 alignItems: "flex-end",
+                bgcolor: 'secondary.light',
+                borderRadius: 3,
+                border: 5,
+                borderColor: 'primary.dark',
+                paddingInline: 2,
+                paddingBlock: 1,
+                boxShadow: 'inset 4px 4px 16px 0px #ff8f00'
             }}
             className="Screen">
             <h4>Array de operaciones</h4>
