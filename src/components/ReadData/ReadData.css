@@ -1,0 +1,10 @@
+.ReadData {
+    display: flex;
+    padding: 16px;
+    border: 1px solid #f5f5f5;
+    box-shadow: inset 16px 4px 24px 0px #ffffff
+}
+
+.ReadData p {
+    margin-block: 0px;
+}
