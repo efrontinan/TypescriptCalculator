@@ -11,7 +11,7 @@ const Keys = () => {
                 justifyContent: "flex-start",
                 alignItems: "stretch",
             }}>
-            <KeysRow keyValues={['AC', '(', ')', '÷']} />
+            <KeysRow keyValues={['⬅', '(', ')', '÷']} />
             <KeysRow keyValues={[7, 8, 9, 'x']} />
             <KeysRow keyValues={[4, 5, 6, '-']} />
             <KeysRow keyValues={[1, 2, 3, '+']} />
