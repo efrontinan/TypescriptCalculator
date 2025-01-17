@@ -12,8 +12,17 @@ const KeyElement: React.FC<KeyElementProps> = ({ keyValue }) => {
 
     const handleClick = () => {
 
+        if (keyValue === 'x') {
+            return inputArr.push('*')
+        }
+
+        if (keyValue === '÷') {
+            return inputArr.push('/')
+        }
+
         if (keyValue === '=') {
-            return calculate([...inputArr])
+            calculate([...inputArr])
+            return setInputArr([])
         }
 
         if (keyValue === 'ANS') {
