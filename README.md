@@ -1,50 +1,39 @@
-# React + TypeScript + Vite
+# 🧮 Typescript Calculator
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+![Calculator Screenshot](https://res.cloudinary.com/dt9pviq34/image/upload/v1737507265/IMG_7345_vgl2tm.jpg) 
+## **Introduction**
 
-Currently, two official plugins are available:
+The **Typescript Calculator** is a sleek, modern calculator built using **React** and **TypeScript**. Designed with a **neomorphism** aesthetic, this project leverages the **Material-UI** framework to create a user-friendly and visually appealing interface. It’s a perfect demonstration of combining functional programming with elegant UI design.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## **Features**
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- **TypeScript Integration**: Ensures type safety and better code maintainability.
+- **React Hooks**: Utilizes hooks for state management and functional components.
+- **Neomorphism Design**: A soft, futuristic look achieved using **Material-UI**.
+- **Core Calculator Functions**: Supports basic arithmetic operations (addition, subtraction, multiplication, division).
+- **Responsive Design**: Adaptable to various screen sizes for optimal usability.
 
-- Configure the top-level `parserOptions` property like this:
+---
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+## **Technologies Used**
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+- **React**
+- **TypeScript**
+- **Material-UI**
+- **Neomorphism Styling**
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+---
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+## **Getting Started**
+
+### **Prerequisites**
+
+Ensure you have **Node.js** and **npm** installed on your machine.
+
+### **Installation**
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/efrontinan/TypescriptCalculator.git
