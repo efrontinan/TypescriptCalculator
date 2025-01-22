@@ -13,14 +13,29 @@ const KeyElement: React.FC<KeyElementProps> = ({ keyValue }) => {
     const handleClick = () => {
 
         if (keyValue === 'x') {
+            const prevAnswer = Number(localStorage.getItem('prevResult'))
+            if (inputArr.length === 0) {
+                inputArr.push(prevAnswer)
+            }
             return inputArr.push('*')
         }
 
         if (keyValue === '÷') {
+            const prevAnswer = Number(localStorage.getItem('prevResult'))
+            if (inputArr.length === 0) {
+                inputArr.push(prevAnswer)
+            }
             return inputArr.push('/')
         }
 
+        if (keyValue === '-' && inputArr.length === 0) {
+            const prevAnswer = Number(localStorage.getItem('prevResult'))
+            inputArr.push(prevAnswer)
+            return inputArr.push('-')
+        }
+
         if (keyValue === '=') {
+            if (inputArr.length === 0) return alert('Please enter some value to calculate')
             calculate([...inputArr])
             return setInputArr([])
         }
@@ -29,6 +44,9 @@ const KeyElement: React.FC<KeyElementProps> = ({ keyValue }) => {
             const prevAnswer = Number(localStorage.getItem('prevResult'))
             inputArr.push(prevAnswer)
             return setInputArr([...inputArr])
+        }
+        if (keyValue === '⬅' && inputArr.length === 0) {
+            return setInputArr([])
         }
 
         if (keyValue === '⬅') {
